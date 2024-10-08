@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.1.1...v1.1.2) (2024-10-08)
+
+
+### Bug Fixes
+
+* Adjust release workflow ([2f75e19](https://github.com/WoHinDu/AI-Project-Brief/commit/2f75e19bad3c3bca13fb56e65650214fbed92a0e))
+
 ## [1.1.1](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.1.0...v1.1.1) (2024-10-08)
 
 
