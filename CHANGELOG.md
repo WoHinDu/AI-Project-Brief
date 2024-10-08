@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.0.0...v1.1.0) (2024-10-08)
+
+
+### Features
+
+* Update release workflow ([149227a](https://github.com/WoHinDu/AI-Project-Brief/commit/149227afabd9c52cba88370c7ac76751ae6e0fb3))
+
 ## 1.0.0 (2024-10-08)
 
 
