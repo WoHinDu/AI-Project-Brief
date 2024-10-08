@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.4](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.1.3...v1.1.4) (2024-10-08)
+
+
+### Bug Fixes
+
+* Adjust release workflow ([358916e](https://github.com/WoHinDu/AI-Project-Brief/commit/358916e9b605996835af56069ee3c457dc65d12a))
+* Use PAT in release workflow ([b79168d](https://github.com/WoHinDu/AI-Project-Brief/commit/b79168d8d917e86fbf020d077919b936c50af784))
+* Use PAT in release workflow ([8dd88fa](https://github.com/WoHinDu/AI-Project-Brief/commit/8dd88faeab30440e6acea0faaad23b09ca6bc195))
+
 ## [1.1.3](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.1.2...v1.1.3) (2024-10-08)
 
 
