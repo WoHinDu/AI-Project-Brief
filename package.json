@@ -1,0 +1,97 @@
+{
+    "name": "ai-project-brief",
+    "publisher": "WoHinDu",
+    "displayName": "AI Project Brief: Codebase Consolidator for AI Assistants",
+    "description": "Quickly combine and export your project files for easy sharing with AI assistants like ChatGPT",
+    "repository": "https://github.com/WoHinDu/AI-Project-Brief",
+    "version": "1.0.0",
+    "license": "MIT",
+    "keywords": [
+        "file",
+        "combine",
+        "merge",
+        "concatenate"
+    ],
+    "galleryBanner": {
+        "color": "#C80000",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "categories": [
+        "Other",
+        "AI"
+    ],
+    "main": "./extension.js",
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "aiProjectBrief.combineFiles",
+                "title": "AI Project Brief: Combine Files"
+            },
+            {
+                "command": "aiProjectBrief.combineFilesToClipboard",
+                "title": "AI Project Brief: Combine Files to Clipboard"
+            },
+            {
+                "command": "aiProjectBrief.editCustomTexts",
+                "title": "AI Project Brief: Edit Custom Prefix/Suffix Texts"
+            }
+        ],
+        "configuration": {
+            "title": "AI Project Brief",
+            "properties": {
+                "aiProjectBrief.filePatterns": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "pattern": {
+                                "type": "string",
+                                "description": "File pattern in VSCode glob format"
+                            },
+                            "action": {
+                                "type": "string",
+                                "enum": [
+                                    "include",
+                                    "pathOnly",
+                                    "ignore"
+                                ],
+                                "description": "Action to take for matching files"
+                            }
+                        },
+                        "required": [
+                            "pattern",
+                            "action"
+                        ]
+                    },
+                    "default": [],
+                    "description": "Specify how different file patterns should be handled"
+                },
+                "aiProjectBrief.respectGitignore": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Respect .gitignore when combining files"
+                },
+                "aiProjectBrief.customPrefixText": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Custom text to insert at the beginning of the combined content"
+                },
+                "aiProjectBrief.customSuffixText": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Custom text to insert at the end of the combined content"
+                }
+            }
+        }
+    },
+    "dependencies": {
+        "ignore": "^5.2.0",
+        "minimatch": "^5.1.0"
+    }
+}
