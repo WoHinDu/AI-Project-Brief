@@ -19,3 +19,47 @@ jobs:
         with:
           token: ${{ secrets.GIT_PAT }}
           release-type: node
+
+      - name: Checkout code
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: Install dependencies
+        if: ${{ steps.release.outputs.release_created }}
+        run: npm ci
+
+      - name: Install vsce
+        if: ${{ steps.release.outputs.release_created }}
+        run: npm install -g @vscode/vsce
+
+      - name: Package extension
+        if: ${{ steps.release.outputs.release_created }}
+        run: vsce package
+
+      - name: Get VSIX filename
+        if: ${{ steps.release.outputs.release_created }}
+        id: get-vsix-filename
+        run: echo "VSIX_FILENAME=$(ls *.vsix)" >> $GITHUB_OUTPUT
+
+      - name: Publish to Visual Studio Marketplace
+        if: ${{ steps.release.outputs.release_created }}
+        run: vsce publish -p ${{ secrets.VSCE_PAT }}
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+      - name: Upload VSIX as release asset
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_PAT }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./${{ steps.get-vsix-filename.outputs.VSIX_FILENAME }}
+          asset_name: ${{ steps.get-vsix-filename.outputs.VSIX_FILENAME }}
+          asset_content_type: application/octet-stream
