@@ -90,9 +90,3 @@ This extension contributes the following settings:
 ## Known Issues
 
 Please report any issues on the GitHub repository.
-
-## Release Notes
-
-### 1.0.0
-
-Initial release of AI Project Brief
