@@ -18,7 +18,7 @@ jobs:
       - uses: googleapis/release-please-action@v4
         id: release
         with:
-          token: ${{ secrets.GIT_TOKEN }}
+          token: ${{ secrets.GIT_PAT }}
           release-type: node
 
   build-and-publish:
@@ -52,5 +52,5 @@ jobs:
 
       - name: Upload Release Artifact
         env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIT_PAT }}
         run: gh release upload ${{ needs.release-please.outputs.tag_name }} *.vsix
