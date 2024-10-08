@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.1.2...v1.1.3) (2024-10-08)
+
+
+### Bug Fixes
+
+* Update node version in release workflow ([e0f3e4e](https://github.com/WoHinDu/AI-Project-Brief/commit/e0f3e4e07df7792aa2e0db72229bfcb1ce60cfa5))
+
 ## [1.1.2](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.1.1...v1.1.2) (2024-10-08)
 
 
