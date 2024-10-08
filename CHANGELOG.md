@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.5](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.1.4...v1.1.5) (2024-10-08)
+
+
+### Bug Fixes
+
+* Adjust job outputs in release workflow ([55f8fef](https://github.com/WoHinDu/AI-Project-Brief/commit/55f8fef2f1f4706aa7bc51abe599825030a4217a))
+
 ## [1.1.4](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.1.3...v1.1.4) (2024-10-08)
 
 
