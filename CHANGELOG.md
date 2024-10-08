@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.1.0...v1.1.1) (2024-10-08)
+
+
+### Bug Fixes
+
+* Test workflow ([27b2881](https://github.com/WoHinDu/AI-Project-Brief/commit/27b288132425d11eb5f68061e737057b253e8d00))
+
 ## [1.1.0](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.0.0...v1.1.0) (2024-10-08)
 
 

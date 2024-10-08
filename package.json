@@ -4,7 +4,7 @@
     "displayName": "AI Project Brief: Codebase Consolidator for AI Assistants",
     "description": "Quickly combine and export your project files for easy sharing with AI assistants like ChatGPT",
     "repository": "https://github.com/WoHinDu/AI-Project-Brief",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "license": "MIT",
     "keywords": [
         "file",
