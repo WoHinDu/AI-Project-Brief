@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.1.5...v1.2.0) (2024-10-09)
+
+
+### Features
+
+* **package.json:** Update default file patterns in aiProjectBrief ([#9](https://github.com/WoHinDu/AI-Project-Brief/issues/9)) ([13ab23c](https://github.com/WoHinDu/AI-Project-Brief/commit/13ab23c8e47fcdf0dac3fe1c381c2e8f4bb8b9f6))
+
 ## [1.1.5](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.1.4...v1.1.5) (2024-10-08)
 
 
