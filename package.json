@@ -69,7 +69,12 @@
                             "action"
                         ]
                     },
-                    "default": [],
+                    "default": [
+                        {
+                            "pattern": ".git/**",
+                            "action": "ignore"
+                        }
+                    ],
                     "description": "Specify how different file patterns should be handled"
                 },
                 "aiProjectBrief.respectGitignore": {
