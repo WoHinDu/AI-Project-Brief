@@ -49,10 +49,10 @@ async function getCombinedContent(rootPath) {
                 switch (action) {
                     case 'include':
                         const content = await fs.promises.readFile(fullPath, 'utf8');
-                        combinedContent += `\n\n# ${relativePath}\n\n${content}`;
+                        combinedContent += `\n\n=== FILE: ${relativePath} ===\n\n${content}`;
                         break;
                     case 'pathOnly':
-                        combinedContent += `\n\n# ${relativePath}\n`;
+                        combinedContent += `\n\n=== FILE: ${relativePath} ===\n`;
                         break;
                     case 'ignore':
                         // Do nothing
