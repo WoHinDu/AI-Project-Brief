@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.2.0...v1.3.0) (2024-10-09)
+
+
+### Features
+
+* Update combined content generation in extension.js ([#11](https://github.com/WoHinDu/AI-Project-Brief/issues/11)) ([2a75e36](https://github.com/WoHinDu/AI-Project-Brief/commit/2a75e3620328d71e7a8ddd87fa90c4a854f268a2))
+
 ## [1.2.0](https://github.com/WoHinDu/AI-Project-Brief/compare/v1.1.5...v1.2.0) (2024-10-09)
 
 
